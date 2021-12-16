@@ -1,5 +1,9 @@
 # rule-based-classification
-<h3>Calculation of the Potential Revenue Return of the Customer by Using Rule-based Classification</h1>
+<h2>Calculation of the Potential Revenue Return of the Customer by Using Rule-Based Classification</h1>
+
+
+![Alt text](https://theupcoming-flmedialtd.netdna-ssl.com/wp-content/uploads/2019/09/smartphone-pexels-generic-adults-casual-cellphone-1413653.jpg "Customer Segmentation")
+
 
 <b>Business Problem</b>
 
@@ -16,5 +20,4 @@ Persona.csv dataset contains the prices of the products sold by an international
 <b>SEX</b> - Customer's gender                 
 <b>COUNTRY</b> - Country of the customer                      
 <b>AGE</b> - Customer's age
-
 
