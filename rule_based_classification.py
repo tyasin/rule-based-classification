@@ -13,31 +13,40 @@ df.info()
 df.index
 
 ## Number of unique SOURCE values in the dataset and their frequencies ##
+
 df["SOURCE"].nunique()
 df["SOURCE"].value_counts()
 
 ## Number of unique PRICE values ##
+
 df["PRICE"].nunique()
 
 ## How many sales were made from which PRICE ?##
+
 df["PRICE"].value_counts()
 
 ## How many sales from which country? ##
+
 df.groupby("COUNTRY").agg({"PRICE":"count"})
 
 ## How much was earned in total from sales by country? ##
+
 df.groupby("COUNTRY").agg({"PRICE":"sum"})
 
 ## What are the sales numbers by SOURCE types? ##
+
 df["SOURCE"].value_counts()
 
 ## What are the PRICE averages by country? ##
+
 df.groupby(by = ["COUNTRY"]).agg({"PRICE":"mean"})
 
 ## What are the averages of PRICEs according to SOURCEs?? ##
+
 df.groupby("SOURCE").agg({"PRICE":"mean"})
 
 ## What are the PRICE averages in the COUNTRY-SOURCE diffraction? ##
+
 df.groupby(["COUNTRY", "SOURCE"]).agg({"PRICE":"mean"})
 
 ## What are the average earnings in the diffraction of COUNTRY, SOURCE, SEX, AGE? ##
@@ -69,11 +78,13 @@ agg_list = ["mean", "max", "min"]
 agg_df.groupby("SEGMENT").agg({"PRICE" : agg_list})
 
 ## Analyzing the C segment ##
+
 agg_df["SEGMENT"] == "C"
 agg_df[agg_df["SEGMENT"] == "C"]
 agg_df["SEGMENT"].value_counts()
 
 ## Classify new customers by segment and estimate how much revenue they can generate ##
+
 new_user = "TUR_ANDROID_FEMALE_31_40"
 agg_df[agg_df["customers_level_based"] == new_user]
 
